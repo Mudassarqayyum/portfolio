@@ -346,7 +346,7 @@ export default function Home() {
                 LinkedIn
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/Mudassarqayyum"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 border border-[#30363d] text-[#e6edf3] rounded-lg hover:bg-[#161b22] transition"
