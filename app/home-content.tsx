@@ -336,7 +336,7 @@ export function HomeContent() {
                   My experience spans e-commerce platforms, healthcare delivery systems, and mobile applications. I focus on writing clean, maintainable code and designing user experiences that are intuitive and responsive.
                 </p>
                 <p>
-                  Based in Manchester with a valid UK visa until October 2027. I'm open to collaborating on projects that challenge my skills and deliver meaningful impact.
+                  Based in Manchester. I'm open to collaborating on projects that challenge my skills and deliver meaningful impact.
                 </p>
               </div>
             </div>
