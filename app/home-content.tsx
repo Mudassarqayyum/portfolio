@@ -125,6 +125,9 @@ export function HomeContent() {
             <a href="#skills" className={`text-sm ${isDark ? "text-[#8b949e] hover:text-[#00d9ff]" : "text-gray-600 hover:text-cyan-600"} transition`}>
               Skills
             </a>
+            <a href="#resume" className={`text-sm ${isDark ? "text-[#8b949e] hover:text-[#00d9ff]" : "text-gray-600 hover:text-cyan-600"} transition`}>
+              Resume
+            </a>
             <a href="#contact" className={`text-sm ${isDark ? "text-[#8b949e] hover:text-[#00d9ff]" : "text-gray-600 hover:text-cyan-600"} transition`}>
               Contact
             </a>
@@ -292,6 +295,59 @@ export function HomeContent() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Resume Section */}
+      <section id="resume" className={`py-32 px-6 ${isDark ? "bg-[#161b22]/30" : "bg-gray-50"} transition-colors duration-300`}>
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
+          >
+            <h2 className={`heading-lg mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>Resume / CV</h2>
+            <div className={`w-16 h-1 bg-gradient-to-r ${isDark ? "from-[#00d9ff]" : "from-cyan-500"} to-transparent`}></div>
+            <p className={`mt-4 text-lg ${isDark ? "text-[#8b949e]" : "text-gray-600"}`}>
+              Download my CV to see my full educational background, experience, and technical qualifications.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className={`rounded-xl border p-12 text-center ${isDark ? "bg-gradient-to-br from-[#161b22] to-[#0f1117] border-[#30363d]" : "bg-white border-gray-200"}`}
+          >
+            <div className={`flex justify-center mb-6 text-6xl`}>
+              📄
+            </div>
+            <h3 className={`text-2xl font-bold mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>
+              Mudassar Qayyum — Full Stack Developer
+            </h3>
+            <p className={`mb-8 text-lg ${isDark ? "text-[#8b949e]" : "text-gray-600"}`}>
+              MSc Software Engineering | MERN Stack | React Native | Mobile & Web Development
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/resume.pdf"
+                download="Mudassar-Qayyum-CV.pdf"
+                className="px-8 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition"
+              >
+                ⬇️ Download CV
+              </a>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`px-8 py-3 border rounded-lg font-semibold transition ${isDark ? "border-[#30363d] text-[#e6edf3] hover:bg-[#161b22]" : "border-gray-300 text-gray-900 hover:bg-gray-100"}`}
+              >
+                👁️ View in Browser
+              </a>
+            </div>
+          </motion.div>
         </div>
       </section>
 
