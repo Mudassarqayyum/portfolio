@@ -332,8 +332,7 @@ export function HomeContent() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/resume.pdf"
-                download="Mudassar-Qayyum-CV.pdf"
+                href="/api/download-resume"
                 className="px-8 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition"
               >
                 ⬇️ Download CV
