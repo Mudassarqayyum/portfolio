@@ -347,7 +347,7 @@ export function HomeContent() {
               📄
             </div>
             <h3 className={`text-2xl font-bold mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>
-              Mudassar Qayyum — Full Stack Developer
+              Mudassar Qayyum — Full Stack Web & Mobile Developer
             </h3>
             <p className={`mb-8 text-lg ${isDark ? "text-[#8b949e]" : "text-gray-600"}`}>
               MSc Software Engineering | MERN Stack | React Native | Mobile & Web Development
