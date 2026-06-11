@@ -352,7 +352,7 @@ export function HomeContent() {
 
       {/* About Section */}
       <section className={`py-32 px-6 ${isDark ? "bg-[#161b22]/30" : "bg-gray-50"} transition-colors duration-300`}>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -364,26 +364,43 @@ export function HomeContent() {
               <div className={`w-16 h-1 bg-gradient-to-r ${isDark ? "from-[#00d9ff]" : "from-cyan-500"} to-transparent mb-6`}></div>
             </div>
 
-            <div className={`space-y-6 text-lg leading-relaxed ${isDark ? "text-[#8b949e]" : "text-gray-600"}`}>
-              <p>
-                I'm a full-stack developer with an MSc in Software Engineering from the University of Greater Manchester. I have a strong foundation in JavaScript, React, and Node.js, having built 5 production-ready applications across web and mobile platforms.
-              </p>
-              <p>
-                My experience spans e-commerce platforms, healthcare delivery systems, and mobile applications. I'm passionate about writing clean, maintainable code and creating user experiences that feel intuitive and delightful.
-              </p>
-              <p>
-                Currently based in Manchester with a valid UK visa (until October 2027), I'm actively seeking junior developer roles or internships where I can contribute to impactful projects and continue growing as an engineer.
-              </p>
-            </div>
+            <div className="grid md:grid-cols-3 gap-8 items-start">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+                className="flex justify-center md:justify-start"
+              >
+                <div className={`relative w-64 h-64 rounded-2xl overflow-hidden border-2 ${isDark ? "border-[#30363d]" : "border-gray-200"} shadow-lg`}>
+                  <img
+                    src="/profile.jpg"
+                    alt="Mudassar Qayyum"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </motion.div>
 
-            <div className="grid grid-cols-2 gap-8 pt-8">
-              <div>
-                <p className={`font-semibold text-2xl ${isDark ? "text-[#00d9ff]" : "text-cyan-600"}`}>5+</p>
-                <p className={isDark ? "text-[#8b949e]" : "text-gray-600"}>Complete Projects</p>
-              </div>
-              <div>
-                <p className={`font-semibold text-2xl ${isDark ? "text-[#00d9ff]" : "text-cyan-600"}`}>2+</p>
-                <p className={isDark ? "text-[#8b949e]" : "text-gray-600"}>Years Experience</p>
+              <div className={`md:col-span-2 space-y-6 text-lg leading-relaxed ${isDark ? "text-[#8b949e]" : "text-gray-600"}`}>
+                <p>
+                  I'm a full-stack developer with an MSc in Software Engineering from the University of Greater Manchester. I have a strong foundation in JavaScript, React, and Node.js, having built 5 production-ready applications across web and mobile platforms.
+                </p>
+                <p>
+                  My experience spans e-commerce platforms, healthcare delivery systems, and mobile applications. I'm passionate about writing clean, maintainable code and creating user experiences that feel intuitive and delightful.
+                </p>
+                <p>
+                  Currently based in Manchester with a valid UK visa (until October 2027), I'm actively seeking junior developer roles or internships where I can contribute to impactful projects and continue growing as an engineer.
+                </p>
+
+                <div className="grid grid-cols-2 gap-8 pt-8">
+                  <div>
+                    <p className={`font-semibold text-2xl ${isDark ? "text-[#00d9ff]" : "text-cyan-600"}`}>5+</p>
+                    <p className={isDark ? "text-[#8b949e]" : "text-gray-600"}>Complete Projects</p>
+                  </div>
+                  <div>
+                    <p className={`font-semibold text-2xl ${isDark ? "text-[#00d9ff]" : "text-cyan-600"}`}>2+</p>
+                    <p className={isDark ? "text-[#8b949e]" : "text-gray-600"}>Years Experience</p>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
