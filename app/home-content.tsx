@@ -413,17 +413,6 @@ export function HomeContent() {
                 <p>
                   Based in Manchester with a valid UK visa until October 2027. I'm open to collaborating on projects that challenge my skills and deliver meaningful impact.
                 </p>
-
-                <div className="grid grid-cols-2 gap-8 pt-8">
-                  <div>
-                    <p className={`font-semibold text-2xl ${isDark ? "text-[#00d9ff]" : "text-cyan-600"}`}>5+</p>
-                    <p className={isDark ? "text-[#8b949e]" : "text-gray-600"}>Complete Projects</p>
-                  </div>
-                  <div>
-                    <p className={`font-semibold text-2xl ${isDark ? "text-[#00d9ff]" : "text-cyan-600"}`}>2+</p>
-                    <p className={isDark ? "text-[#8b949e]" : "text-gray-600"}>Years Experience</p>
-                  </div>
-                </div>
               </div>
             </div>
           </motion.div>
