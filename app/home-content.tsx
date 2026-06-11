@@ -343,6 +343,9 @@ export function HomeContent() {
             transition={{ duration: 0.6 }}
             className={`rounded-xl border p-12 text-center ${isDark ? "bg-gradient-to-br from-[#161b22] to-[#0f1117] border-[#30363d]" : "bg-white border-gray-200"}`}
           >
+            <div className={`flex justify-center mb-6 text-6xl`}>
+              📄
+            </div>
             <h3 className={`text-2xl font-bold mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>
               Mudassar Qayyum — Full Stack Web & Mobile Developer
             </h3>
@@ -355,7 +358,7 @@ export function HomeContent() {
                 href="/api/download-resume"
                 className="px-8 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition"
               >
-                Download CV
+                ⬇️ Download CV
               </a>
               <a
                 href="/resume.pdf"
@@ -363,7 +366,7 @@ export function HomeContent() {
                 rel="noopener noreferrer"
                 className={`px-8 py-3 border rounded-lg font-semibold transition ${isDark ? "border-[#30363d] text-[#e6edf3] hover:bg-[#161b22]" : "border-gray-300 text-gray-900 hover:bg-gray-100"}`}
               >
-                View CV Online
+                👁️ View in Browser
               </a>
             </div>
           </motion.div>
