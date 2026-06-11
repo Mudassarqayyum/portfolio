@@ -330,10 +330,10 @@ export function HomeContent() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <h2 className={`heading-lg mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>Resume / CV</h2>
+            <h2 className={`heading-lg mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>My CV</h2>
             <div className={`w-16 h-1 bg-gradient-to-r ${isDark ? "from-[#00d9ff]" : "from-cyan-500"} to-transparent`}></div>
             <p className={`mt-4 text-lg ${isDark ? "text-[#8b949e]" : "text-gray-600"}`}>
-              Download my CV to see my full educational background, experience, and technical qualifications.
+              View or download my detailed CV to learn more about my background, education, and professional qualifications.
             </p>
           </motion.div>
 
