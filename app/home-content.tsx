@@ -229,7 +229,7 @@ export function HomeContent() {
             <h2 className={`heading-lg mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>Featured Projects</h2>
             <div className={`w-16 h-1 bg-gradient-to-r ${isDark ? "from-[#00d9ff]" : "from-cyan-500"} to-transparent`}></div>
             <p className={`mt-4 text-lg ${isDark ? "text-[#8b949e]" : "text-gray-600"}`}>
-              5 end-to-end projects showcasing full-stack development across web and mobile platforms
+              End-to-end projects showcasing full-stack development across web and mobile platforms
             </p>
           </motion.div>
 
@@ -405,7 +405,7 @@ export function HomeContent() {
 
               <div className={`md:col-span-2 space-y-6 text-lg leading-relaxed ${isDark ? "text-[#8b949e]" : "text-gray-600"}`}>
                 <p>
-                  I'm a full-stack developer with an MSc in Software Engineering from the University of Greater Manchester. I have a strong foundation in JavaScript, React, and Node.js, having built 5 production-ready applications across web and mobile platforms.
+                  I'm a full-stack developer with an MSc in Software Engineering from the University of Greater Manchester. I have a strong foundation in JavaScript, React, and Node.js, having built production-ready applications across web and mobile platforms.
                 </p>
                 <p>
                   My experience spans e-commerce platforms, healthcare delivery systems, and mobile applications. I focus on writing clean, maintainable code and designing user experiences that are intuitive and responsive.
