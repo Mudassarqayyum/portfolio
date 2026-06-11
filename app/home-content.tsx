@@ -11,6 +11,7 @@ interface Project {
   tech: string[];
   details: string[];
   color: string;
+  logo: string;
 }
 
 const projects: Project[] = [
@@ -26,6 +27,7 @@ const projects: Project[] = [
       "MongoDB schemas for structured data",
     ],
     color: "from-blue-500 to-cyan-500",
+    logo: "/medicine360.png",
   },
   {
     id: 2,
@@ -39,6 +41,7 @@ const projects: Project[] = [
       "Smooth navigation and state management",
     ],
     color: "from-orange-500 to-pink-500",
+    logo: "/cheezyNow.png",
   },
   {
     id: 3,
@@ -52,6 +55,7 @@ const projects: Project[] = [
       "Streamlined checkout flow",
     ],
     color: "from-purple-500 to-pink-500",
+    logo: "/pet360logo.png",
   },
   {
     id: 4,
@@ -65,6 +69,21 @@ const projects: Project[] = [
       "Structured API data parsing",
     ],
     color: "from-sky-400 to-blue-500",
+    logo: "/weatherlogo.png",
+  },
+  {
+    id: 5,
+    title: "Fitness Tracker App",
+    description: "Workout guidance and progress monitoring mobile app",
+    tech: ["React Native", "State Management", "Data Persistence"],
+    details: [
+      "Comprehensive fitness tracking system",
+      "Workout guidance and exercise tutorials",
+      "Progress monitoring and statistics",
+      "Persistent data storage and analytics",
+    ],
+    color: "from-green-500 to-emerald-500",
+    logo: "/fitnesslogo.png",
   },
 ];
 
@@ -227,7 +246,11 @@ export function HomeContent() {
                 <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 bg-gradient-to-br ${project.color} transition duration-500`}></div>
 
                 <div className="relative z-10">
-                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${project.color} mb-6 opacity-80 group-hover:opacity-100 transition`}></div>
+                  <img
+                    src={project.logo}
+                    alt={project.title}
+                    className="w-16 h-16 object-contain mb-6 opacity-90 group-hover:opacity-100 transition"
+                  />
 
                   <h3 className={`text-xl font-bold mb-3 ${isDark ? "text-white" : "text-gray-900"}`}>{project.title}</h3>
                   <p className={`mb-6 leading-relaxed ${isDark ? "text-[#8b949e]" : "text-gray-600"}`}>{project.description}</p>
