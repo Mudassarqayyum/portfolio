@@ -179,7 +179,7 @@ export function HomeContent() {
         >
           <motion.div variants={itemVariants} className="space-y-2">
             <div className={`inline-block px-4 py-2 border ${isDark ? "border-[#30363d] text-[#8b949e]" : "border-gray-300 text-gray-600"} rounded-full text-sm mb-6`}>
-              👋 Welcome to my portfolio
+              Welcome to my portfolio
             </div>
             <h1 className={`heading-xl max-w-3xl mx-auto ${isDark ? "text-white" : "text-gray-900"}`}>
               Full Stack Web &{" "}
@@ -212,7 +212,7 @@ export function HomeContent() {
           </motion.div>
 
           <motion.div variants={itemVariants} className={`pt-8 text-sm ${isDark ? "text-[#8b949e]" : "text-gray-600"}`}>
-            📍 Manchester, UK | Available for junior roles & internships
+            Manchester, UK | Open to junior roles and internships
           </motion.div>
         </motion.div>
       </section>
