@@ -371,7 +371,7 @@ export function HomeContent() {
                 transition={{ duration: 0.6 }}
                 className="flex justify-center md:justify-start"
               >
-                <div className={`relative w-64 h-64 rounded-2xl overflow-hidden border-2 ${isDark ? "border-[#30363d]" : "border-gray-200"} shadow-lg`}>
+                <div className={`relative w-80 h-80 rounded-2xl overflow-hidden border-2 ${isDark ? "border-[#30363d]" : "border-gray-200"} shadow-lg`}>
                   <img
                     src="/profile.jpg"
                     alt="Mudassar Qayyum"
