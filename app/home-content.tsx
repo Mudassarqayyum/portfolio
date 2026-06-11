@@ -201,13 +201,13 @@ export function HomeContent() {
               href="#projects"
               className="px-8 py-3 bg-cyan-500 dark:bg-cyan-500 text-white dark:text-gray-900 font-semibold rounded-lg hover:bg-cyan-600 dark:hover:bg-cyan-400 transition"
             >
-              View My Work
+              View Projects
             </a>
             <a
               href="mailto:mudassarqayyumuk@gmail.com"
               className={`px-8 py-3 border rounded-lg font-semibold transition ${isDark ? "border-[#30363d] text-[#e6edf3] hover:bg-[#161b22]" : "border-gray-300 text-gray-900 hover:bg-gray-100"}`}
             >
-              Get in Touch
+              Contact Me
             </a>
           </motion.div>
 
@@ -343,9 +343,6 @@ export function HomeContent() {
             transition={{ duration: 0.6 }}
             className={`rounded-xl border p-12 text-center ${isDark ? "bg-gradient-to-br from-[#161b22] to-[#0f1117] border-[#30363d]" : "bg-white border-gray-200"}`}
           >
-            <div className={`flex justify-center mb-6 text-6xl`}>
-              📄
-            </div>
             <h3 className={`text-2xl font-bold mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>
               Mudassar Qayyum — Full Stack Web & Mobile Developer
             </h3>
@@ -358,7 +355,7 @@ export function HomeContent() {
                 href="/api/download-resume"
                 className="px-8 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition"
               >
-                ⬇️ Download CV
+                Download CV
               </a>
               <a
                 href="/resume.pdf"
@@ -366,7 +363,7 @@ export function HomeContent() {
                 rel="noopener noreferrer"
                 className={`px-8 py-3 border rounded-lg font-semibold transition ${isDark ? "border-[#30363d] text-[#e6edf3] hover:bg-[#161b22]" : "border-gray-300 text-gray-900 hover:bg-gray-100"}`}
               >
-                👁️ View in Browser
+                View CV Online
               </a>
             </div>
           </motion.div>
@@ -408,10 +405,10 @@ export function HomeContent() {
                   I'm a full-stack developer with an MSc in Software Engineering from the University of Greater Manchester. I have a strong foundation in JavaScript, React, and Node.js, having built 5 production-ready applications across web and mobile platforms.
                 </p>
                 <p>
-                  My experience spans e-commerce platforms, healthcare delivery systems, and mobile applications. I'm passionate about writing clean, maintainable code and creating user experiences that feel intuitive and delightful.
+                  My experience spans e-commerce platforms, healthcare delivery systems, and mobile applications. I focus on writing clean, maintainable code and designing user experiences that are intuitive and responsive.
                 </p>
                 <p>
-                  Currently based in Manchester with a valid UK visa (until October 2027), I'm actively seeking junior developer roles or internships where I can contribute to impactful projects and continue growing as an engineer.
+                  Currently based in Manchester with a valid UK visa (until October 2027), I'm seeking junior developer roles or internships to contribute to impactful projects while advancing my technical expertise.
                 </p>
 
                 <div className="grid grid-cols-2 gap-8 pt-8">
