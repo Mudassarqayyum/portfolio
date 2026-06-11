@@ -2,90 +2,9 @@
 
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { useTheme } from "./providers";
-
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  tech: string[];
-  details: string[];
-  color: string;
-  logo: string;
-}
-
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "Medicine365 Web",
-    description: "Full-stack medicine delivery platform with order management system",
-    tech: ["React.js", "Node.js", "MongoDB", "Express.js", "REST APIs"],
-    details: [
-      "Built complete MERN stack application",
-      "Real-time product catalogue and order tracking",
-      "Automated order lifecycle management",
-      "MongoDB schemas for structured data",
-    ],
-    color: "from-blue-500 to-cyan-500",
-    logo: "/medicine360.png",
-  },
-  {
-    id: 2,
-    title: "Cheezy Now",
-    description: "Cross-platform food delivery app for iOS and Android",
-    tech: ["React Native", "REST APIs", "State Management", "iOS", "Android"],
-    details: [
-      "Cross-platform app deployed on iOS and Android",
-      "Real-time restaurant listings and menus",
-      "Live order tracking system",
-      "Smooth navigation and state management",
-    ],
-    color: "from-orange-500 to-pink-500",
-    logo: "/cheezyNow.png",
-  },
-  {
-    id: 3,
-    title: "Pet Accessories Store",
-    description: "E-commerce platform with dynamic product listings and checkout",
-    tech: ["React.js", "MySQL", "REST APIs", "Payment Integration"],
-    details: [
-      "Full e-commerce platform with filtering",
-      "Reusable React components",
-      "Integrated payment systems",
-      "Streamlined checkout flow",
-    ],
-    color: "from-purple-500 to-pink-500",
-    logo: "/pet360logo.png",
-  },
-  {
-    id: 4,
-    title: "Weather Forecast App",
-    description: "Mobile weather app with daily and weekly forecasts",
-    tech: ["React Native", "Third-party APIs", "Data Parsing"],
-    details: [
-      "Real-time weather data integration",
-      "Daily and weekly forecast displays",
-      "Clean, intuitive interface",
-      "Structured API data parsing",
-    ],
-    color: "from-sky-400 to-blue-500",
-    logo: "/weatherlogo.png",
-  },
-  {
-    id: 5,
-    title: "Fitness Tracker App",
-    description: "Workout guidance and progress monitoring mobile app",
-    tech: ["React Native", "State Management", "Data Persistence"],
-    details: [
-      "Comprehensive fitness tracking system",
-      "Workout guidance and exercise tutorials",
-      "Progress monitoring and statistics",
-      "Persistent data storage and analytics",
-    ],
-    color: "from-green-500 to-emerald-500",
-    logo: "/fitnesslogo.png",
-  },
-];
+import { projects } from "./data/projects";
 
 const skills = [
   { category: "Frontend", items: ["React.js", "React Native", "Next.js", "HTML5", "CSS3"] },
@@ -235,17 +154,17 @@ export function HomeContent() {
 
           <div className="grid gap-8 md:grid-cols-2">
             {projects.map((project, index) => (
-              <motion.div
-                key={project.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`group relative overflow-hidden rounded-xl border p-8 transition ${isDark ? "bg-gradient-to-br from-[#161b22] to-[#0f1117] border-[#30363d] hover:border-[#00d9ff]/30" : "bg-white border-gray-200 hover:border-cyan-500/30"}`}
-              >
-                {/* Gradient accent */}
-                <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 bg-gradient-to-br ${project.color} transition duration-500`}></div>
+              <Link key={project.id} href={`/projects/${project.slug}`} className="block">
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className={`group relative overflow-hidden rounded-xl border p-8 transition cursor-pointer ${isDark ? "bg-gradient-to-br from-[#161b22] to-[#0f1117] border-[#30363d] hover:border-[#00d9ff]/30" : "bg-white border-gray-200 hover:border-cyan-500/30"}`}
+                >
+                  {/* Gradient accent */}
+                  <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 bg-gradient-to-br ${project.color} transition duration-500`}></div>
 
-                <div className="relative z-10">
+                  <div className="relative z-10">
                   <img
                     src={project.logo}
                     alt={project.title}
@@ -274,8 +193,14 @@ export function HomeContent() {
                       </span>
                     ))}
                   </div>
+
+                  <div className={`mt-6 flex items-center gap-2 text-sm font-semibold ${isDark ? "text-[#00d9ff]" : "text-cyan-500"} group-hover:gap-3 transition-all`}>
+                    View Details
+                    <span>→</span>
+                  </div>
                 </div>
               </motion.div>
+              </Link>
             ))}
           </div>
         </div>
