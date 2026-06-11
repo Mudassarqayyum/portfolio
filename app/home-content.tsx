@@ -212,7 +212,7 @@ export function HomeContent() {
           </motion.div>
 
           <motion.div variants={itemVariants} className={`pt-8 text-sm ${isDark ? "text-[#8b949e]" : "text-gray-600"}`}>
-            Manchester, UK | Open to junior roles and internships
+            Manchester, UK
           </motion.div>
         </motion.div>
       </section>
