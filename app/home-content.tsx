@@ -182,9 +182,9 @@ export function HomeContent() {
               👋 Welcome to my portfolio
             </div>
             <h1 className={`heading-xl max-w-3xl mx-auto ${isDark ? "text-white" : "text-gray-900"}`}>
-              Full Stack Developer &{" "}
+              Full Stack Web &{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">
-                Recent MSc Graduate
+                Mobile Developer
               </span>
             </h1>
           </motion.div>
