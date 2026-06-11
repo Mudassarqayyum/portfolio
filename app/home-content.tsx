@@ -145,7 +145,7 @@ export function HomeContent() {
               Skills
             </a>
             <a href="#resume" className={`text-sm ${isDark ? "text-[#8b949e] hover:text-[#00d9ff]" : "text-gray-600 hover:text-cyan-600"} transition`}>
-              Resume
+              CV
             </a>
             <a href="#contact" className={`text-sm ${isDark ? "text-[#8b949e] hover:text-[#00d9ff]" : "text-gray-600 hover:text-cyan-600"} transition`}>
               Contact
@@ -330,10 +330,10 @@ export function HomeContent() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <h2 className={`heading-lg mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>My CV</h2>
+            <h2 className={`heading-lg mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>Background</h2>
             <div className={`w-16 h-1 bg-gradient-to-r ${isDark ? "from-[#00d9ff]" : "from-cyan-500"} to-transparent`}></div>
             <p className={`mt-4 text-lg ${isDark ? "text-[#8b949e]" : "text-gray-600"}`}>
-              View or download my detailed CV to learn more about my background, education, and professional qualifications.
+              Download my CV for detailed information on my education, work experience, and technical certifications.
             </p>
           </motion.div>
 
@@ -411,7 +411,7 @@ export function HomeContent() {
                   My experience spans e-commerce platforms, healthcare delivery systems, and mobile applications. I focus on writing clean, maintainable code and designing user experiences that are intuitive and responsive.
                 </p>
                 <p>
-                  Currently based in Manchester with a valid UK visa (until October 2027), I'm seeking junior developer roles or internships to contribute to impactful projects while advancing my technical expertise.
+                  Based in Manchester with a valid UK visa until October 2027. I'm open to collaborating on projects that challenge my skills and deliver meaningful impact.
                 </p>
 
                 <div className="grid grid-cols-2 gap-8 pt-8">
@@ -439,9 +439,9 @@ export function HomeContent() {
             transition={{ duration: 0.6 }}
             className="space-y-8"
           >
-            <h2 className={`heading-lg ${isDark ? "text-white" : "text-gray-900"}`}>Let's Work Together</h2>
+            <h2 className={`heading-lg ${isDark ? "text-white" : "text-gray-900"}`}>Get in Touch</h2>
             <p className={`text-lg max-w-2xl mx-auto ${isDark ? "text-[#8b949e]" : "text-gray-600"}`}>
-              I'm actively looking for junior developer roles and internships. Feel free to reach out if you'd like to discuss opportunities or just want to say hello.
+              Have a project in mind or just want to connect? I'd love to hear from you. Reach out via email or connect with me on LinkedIn.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
